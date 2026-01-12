@@ -1,0 +1,964 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+section,
+header,
+footer,
+ul,
+li,
+ol,
+main,
+aside,
+input,
+textarea,
+select,
+table,
+th,
+tr,
+td,
+thead,
+tbody,
+a,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+span {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Urbanist", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+/* header start  */
+.menuBar .navBtn a.contact,
+.menuBar .navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  color: #141414;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: "Urbanist", sans-serif;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: all linear 0.4s;
+}
+.menuBar .navBtn a.contact:hover,
+.menuBar .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.5;
+}
+.menuBar .navBtn a.merBtn,
+.menuBar .navBtn a.login {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  gap: 6px;
+  background: #ff0000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  padding: 6px 14px;
+  line-height: 25px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+/* icon & text common */
+.menuBar .navBtn a .icon,
+.menuBar .navBtn a .text {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  /* white-space: nowrap; */
+}
+
+/* second icon hidden */
+.menuBar .navBtn a .tIcon {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+/* hover */
+.menuBar .navBtn a:hover .icon:not(.tIcon) {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.menuBar .navBtn a:hover .text {
+  transform: translateX(-20px);
+}
+.menuBar .navBtn a:hover .tIcon {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* header end  */
+
+/* bannerSlider start  */
+.bannerSlider .carousel-item img {
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.bannerSlider .carousel-control-prev,
+.bannerSlider .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  z-index: 3333;
+  transition: all linear 0.4s;
+  top: 50%;
+}
+
+.bannerSlider .carousel-control-prev {
+  left: 50px;
+}
+.bannerSlider .carousel-control-next {
+  right: 50px;
+}
+/* bannerSlider end  */
+
+/* deliveredPart start  */
+.deliveredPart {
+  padding: 200px 0px 60px;
+  background: #fff;
+}
+
+.percelTrackin {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: -300px;
+}
+
+.percelTrakinCont {
+  background: #ff0000;
+  padding: 20px;
+}
+
+.percelTrakinCont h5 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: "Urbanist", sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.percelTrakinCont h3 {
+  color: #fff;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+}
+
+.trackingSearch {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(348deg, #ff0808, #3b0000);
+}
+
+.trackingSearch input {
+  height: 60px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 10px 10px 20px;
+}
+
+.percelAbout h4 {
+  color: #000;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.percelAbout p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #707070;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.percelAbout ul li {
+  color: #141414;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 10px;
+}
+
+.percelAbout ul li i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #eaeaeb;
+  line-height: 40px;
+  margin-right: 10px;
+}
+/* deliveredPart end  */
+
+/* clientLogo start  */
+.clientLogo {
+  padding: 20px;
+  background: #fff;
+}
+/* clientLogo end  */
+
+/* servicePart start  */
+.servicePart {
+  padding: 60px 0px;
+  background: #f7f7f7;
+}
+
+.serviceHead h4 {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  color: #141414;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 10px;
+}
+
+.serviceHead h4::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff0000;
+  content: "";
+}
+
+.serviceHead h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #141414;
+  font-family: "Urbanist", sans-serif;
+}
+
+.serviceItem {
+  padding: 20px;
+  background: #fff;
+}
+
+.serviceContent h4 a {
+  display: inline-block;
+  color: #141414;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.serviceContent p {
+  font-size: 18px;
+  color: #707070;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "Urbanist", sans-serif;
+}
+
+/* servicePart end  */
+
+/* choosePart start  */
+.choosePart {
+  padding: 60px 0px;
+  background: #fff;
+}
+
+.chooseContent h4 {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  color: #141414;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 10px;
+}
+
+.chooseContent h4::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff0000;
+  content: "";
+}
+
+.chooseContent h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #141414;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 20px;
+}
+
+.chooseContent p {
+  font-size: 18px;
+  color: #707070;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 20px;
+}
+
+.secondImg {
+  width: 60%;
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.chooseContent .accordion-item {
+  border: none;
+  box-shadow: none;
+}
+.chooseContent .accordion-item .accordion-button:focus {
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+}
+
+/* choosePart end  */
+
+/* counterPart start  */
+.counterPart {
+  padding: 60px 0px;
+  background: #fff;
+}
+
+.counterItem h2 {
+  font-size: 55px;
+  font-weight: 900;
+  color: #141414;
+  line-height: 55px;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 10px;
+}
+
+.counterItem p {
+  color: #141414;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* counterPart end  */
+
+/* testimonialPart start  */
+.testimonialPart {
+  padding: 60px 0px;
+  background: linear-gradient(90deg, #ff0000, #ffffffe0);
+}
+
+.feedBack span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffea23;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.feedBack h5 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+}
+
+.feedBack h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.feedBack p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 20px;
+}
+
+.feedBack h6 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+}
+
+.clientFeedBack {
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.clientCont span {
+  padding: 10px;
+  border-radius: 30px;
+  background: #da8302;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.clientCont p {
+  color: #141414;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.clientCont h5 {
+  color: #141414;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.testSlider .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50% !important;
+  background: #fff !important;
+  line-height: 40px;
+  font-size: 18px;
+  transform: translateY(-50%);
+}
+
+.testSlider .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50% !important;
+  background: #fff !important;
+  line-height: 40px;
+  font-size: 18px;
+  transform: translateY(-50%);
+}
+
+/* testimonialPart end  */
+
+/* logistic start  */
+.logistic {
+  padding: 80px 0px;
+  background: #f7f7f7;
+}
+
+.calculatorPart h5 {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #141414;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 10px;
+}
+
+.calculatorPart h5::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff0000;
+  content: "";
+}
+
+.calculatorPart h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 20px;
+  color: #141414;
+}
+.calculatorPart textarea,
+.calculatorPart select,
+.calculatorPart input {
+  padding: 10px 20px 10px 20px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all linear 0.4s;
+  box-shadow: 0 0 5px #707070;
+}
+.calculatorPart textarea:focus,
+.calculatorPart select:focus,
+.calculatorPart input:focus {
+  border: 1px solid #ff0000;
+}
+
+.calculatorPart button {
+  display: inline-block !important;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: "Urbanist", sans-serif;
+  transition: all linear 0.4s;
+  cursor: pointer;
+}
+
+.calculatorPart span {
+  display: inline-block;
+  font-size: 55px;
+  line-height: 55px;
+  color: #141414;
+  text-transform: uppercase;
+}
+.calculatorPart select,
+.calculatorPart input::placeholder,
+.calculatorPart textarea::placeholder {
+  color: #707070bd;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Urbanist", sans-serif;
+}
+
+/* logistic end  */
+/* footer start  */
+.footer {
+  padding: 80px 0px 10px;
+  background: #ff0000;
+}
+
+.ftAbout h6,
+.ftAbout p {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.ftAbout ul li a {
+  display: inline-block;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  transition: all linear 0.4s;
+  font-family: "Urbanist", sans-serif;
+}
+
+.ftAbout ul li a:hover {
+  color: #141414;
+}
+
+.copyPart p,
+.ftAbout h5 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  transition: all linear 0.4s;
+  font-family: "Urbanist", sans-serif;
+  color: #fff;
+}
+
+.ftAbout input {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+/* footer end  */
+/* aboutBanner start  */
+.aboutBanner {
+  padding: 100px 0px;
+  background: linear-gradient(45deg, #ff0000, #3b0000);
+}
+
+.aboutBannerHead h2 {
+  font-size: 53px;
+  line-height: 53px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.breadCum ul li a {
+  color: #141414;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.breadCum ul li a::before {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  content: "\f105";
+  color: #707070;
+  font-weight: 900;
+  font-family: "Font Awesome 7 Free";
+}
+
+.breadCum ul li {
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+}
+
+/* aboutBanner end  */
+
+/* aboutContent start  */
+.aboutContent {
+  padding: 80px 0px;
+  background: #fff;
+}
+
+.abtCont h4 {
+  color: #707070;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.abtCont ul li,
+.abtCont p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #707070;
+  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+}
+
+.post {
+  box-shadow: 0 0 5px #707070;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.postCont {
+  padding: 20px 20px;
+  background: #f1f1f1;
+}
+
+.postCont h4 a {
+  color: #707070;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-family: "Urbanist", sans-serif;
+  transition: all linear 0.4s;
+}
+
+.postCont h4 a:hover {
+  color: #ff0808;
+}
+
+.postCont p {
+  color: #141414;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.postImage img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.postCont a.blogBtn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #141414;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid #707070;
+  transition: all linear 0.4s;
+  cursor: pointer;
+  font-family: "Urbanist", sans-serif;
+}
+
+.postCont a.blogBtn:hover {
+  background: #ff0000;
+  border-color: #ff0000;
+  color: #fff;
+}
+/* aboutContent end  */
+
+/* contactPart start  */
+.contactSec {
+  background: #3b0000;
+}
+.contactPart {
+  background: #313131;
+  padding: 50px;
+}
+
+.contactPart h4 {
+  font-size: 38px;
+  line-height: 45px;
+  font-weight: 600;
+  font-family: "Urbanist", sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.contactPart h4 span {
+  display: inline-block;
+  color: #ff0000;
+}
+
+.form-item label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 10px;
+}
+
+.form-item label span {
+  color: #ff0000;
+}
+.form-item textarea {
+  padding: 10px 0;
+  background: transparent;
+  border-bottom: 1px solid #707070;
+  transition: all linear 0.4s;
+}
+.form-item input {
+  height: 50px;
+  padding: 10px 0;
+  background: transparent;
+  border-bottom: 1px solid #707070;
+  transition: all linear 0.4s;
+}
+.form-item textarea:focus,
+.form-item input:focus {
+  border-color: #ff0000;
+}
+
+.form-item button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #ff0000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: "Urbanist", sans-serif;
+  transition: all linear 0.4s;
+  border: none;
+}
+/* contactPart end  */
+
+/* loginPage start  */
+.loginPage {
+  padding: 30px 0px;
+  background: #fff;
+}
+
+.loginCont h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #3b3f5c;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.loginCont h3 a {
+  display: inline-block;
+  color: #6763ee;
+}
+
+.input-group {
+  position: relative;
+}
+.input-group input {
+  padding: 10px 10px 10px 40px;
+  background: transparent;
+  border-bottom: 1px solid #70707096;
+  transition: all linear 0.4s;
+}
+.input-group i {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  color: #6763ee;
+}
+
+.input-group input:focus {
+  border-color: #6763ee;
+}
+
+.form-group button {
+  padding: 10px 30px;
+  background: #6763ee;
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+}
+
+.form-group label span.pill {
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 40px;
+  display: inline-block;
+  background: #707070;
+  transition: all linear 0.4s;
+}
+
+.form-group label span.pillDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #6763ee;
+  cursor: pointer;
+}
+
+.pill.active {
+  background-color: #6366f1;
+}
+
+.pill.active .pillDot {
+  transform: translateX(20px);
+}
+
+.checkbox {
+  width: 2%;
+}
+
+.forgotItem a {
+  display: block;
+  color: #6366f1;
+  margin-bottom: 10px;
+}
+/* loginPage end  */

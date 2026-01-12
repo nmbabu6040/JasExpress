@@ -1,0 +1,127 @@
+@media (max-width: 320px) {
+  .menuBar .navBtn {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bannerSlider .carousel-control-prev,
+  .bannerSlider .carousel-control-next {
+    display: none;
+  }
+
+  .percelTrackin {
+    margin-top: -260px;
+  }
+  .percelTrakinCont {
+    padding: 10px;
+  }
+  .percelTrakinCont h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .trackingSearch {
+    padding: 15px;
+  }
+
+  .percelAbout h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .serviceHead h3 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .clientFeedBack {
+    flex-direction: column;
+  }
+
+  .chooseContent h3 {
+    font-size: 38px;
+    line-height: 43px;
+  }
+
+  .calculatorPart h3 {
+    font-size: 47px;
+  }
+
+  .calculatorPart span {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 320.1px) and (max-width: 576px) {
+  .menuBar .navBtn {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bannerSlider .carousel-control-prev,
+  .bannerSlider .carousel-control-next {
+    display: none;
+  }
+
+  .percelAbout h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .serviceHead h3 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .calculatorPart h3 {
+    font-size: 47px;
+  }
+
+  .chooseContent h3 {
+    font-size: 38px;
+    line-height: 43px;
+  }
+
+  .calculatorPart span {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 576.1px) and (max-width: 768px) {
+  .bannerSlider .carousel-control-prev,
+  .bannerSlider .carousel-control-next {
+    display: none;
+  }
+
+  .percelAbout h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .chooseContent h3 {
+    font-size: 42px;
+  }
+
+  .calculatorPart h3 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 768.1px) and (max-width: 992px) {
+  .menuBar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+  }
+
+  .menuBar .navBtn a.contact,
+  .menuBar .navBtn a.login,
+  .menuBar .navBtn a.merBtn {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+
+  .percelAbout h4 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
